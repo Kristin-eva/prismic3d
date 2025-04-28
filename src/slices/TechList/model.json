@@ -1,0 +1,59 @@
+{
+  "id": "tech_list",
+  "type": "SharedSlice",
+  "name": "TechList",
+  "description": "TechList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "tech_name": {
+          "type": "Group",
+          "config": {
+            "label": "Tech",
+            "repeat": true,
+            "fields": {
+              "tech_name": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Tech Name",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "tech_color": {
+                "type": "Color",
+                "config": {
+                  "label": "Tech Color",
+                  "placeholder": ""
+                }
+              },
+              "tech_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Tech Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
