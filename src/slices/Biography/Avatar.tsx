@@ -66,6 +66,7 @@ export default function Avatar({
             0
           );
       };
+      console.log(ctx);
     }, component);
   }, []);
 
