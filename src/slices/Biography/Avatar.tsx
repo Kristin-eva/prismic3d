@@ -16,7 +16,7 @@ export default function Avatar({
   const component = useRef(null);
 
   useEffect(() => {
-    /*let ctx = gsap.context(() => {
+    gsap.context(() => {
       gsap.fromTo(
         ".avatar",
         {
@@ -30,7 +30,7 @@ export default function Avatar({
           ease: "power3.inOut",
         }
       );
-*/
+
     window.onmousemove = (e) => {
       if (!component.current) return; // no component, no animation!
       const componentRect = (
@@ -66,7 +66,7 @@ export default function Avatar({
           0
         );
     };
-    // }, component);
+    }, component);
   }, []);
 
   return (
